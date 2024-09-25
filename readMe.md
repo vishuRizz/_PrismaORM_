@@ -4,5 +4,12 @@
 - npx tsc -init 
 
 # initialising prisma project
-do this only once when starting the project, this basically tells node that start using prisma as dependency!
+do this only once when starting the project, this basically tells node that start using prisma as dependency! and create schema.prisma file
 - npx primsa init
+
+# after making changes to schema.prisma run this file to intiate SQL queries
+- npx prisma migrate dev --name Initailise the schema
+
+
+# now to generate the exports of schema models
+- npx prisma generate
